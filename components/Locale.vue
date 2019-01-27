@@ -13,17 +13,6 @@ div {
     a {
       text-decoration: none;
 
-      &::after {
-        content: '';
-        display: block;
-        height: 1px;
-        background-color: #111;
-        transform: scale(0);
-        transition: transform 0.2s 0.1s;
-      }
-      &:hover::after {
-        transform: scale(1);
-      }
       &.nuxt-link-exact-active {
         border-bottom: solid thin #111;
       }
@@ -32,9 +21,6 @@ div {
 }
 .isColorInverted {
   a {
-    &::after {
-      background-color: #eee;
-    }
     &.nuxt-link-exact-active {
       border-bottom-color: #eee;
     }

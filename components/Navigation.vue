@@ -1,8 +1,22 @@
+<i18n>
+  {
+    "ja": {
+      "workPath": "/works"
+    },
+    "en": {
+      "workPath": "/en/works"
+    }
+  }
+</i18n>
+
 <template>
   <div :class="{'container': true, 'isColorInverted': isColorInverted}">
     <ul>
       <li><nuxt-link to="/">Top</nuxt-link></li>
+      <!--
       <li><nuxt-link to="/works">Works</nuxt-link></li>
+      -->
+      <li><nuxt-link :to="$t('workPath')">Works</nuxt-link></li>
     </ul>
   </div>
 </template>
@@ -41,9 +55,6 @@ export default {
 }
 .isColorInverted {
   ul {
-    /*
-    border-bottom-color: #eee;
-    */
     li {
       .nuxt-link-exact-active {
         border-bottom-color: #eee;
