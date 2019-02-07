@@ -17,7 +17,10 @@
 
 <template>
   <section>
-    <h3>{{ $t('title') }}</h3>
+    <h3>
+      <img src="/works/tapandwifi.png" width="32" height="32" alt="icon" />
+      <span>{{ $t('title') }}</span>
+    </h3>
     <div class="descriptions">
       <p>{{ $t('description1') }}</p>
       <p>{{ $t('description2') }}</p>
@@ -39,5 +42,8 @@
 <style scoped>
 .descriptions {
   padding: 0px 0px 0px 10px;
+}
+h3 img {
+  vertical-align: middle;
 }
 </style>
