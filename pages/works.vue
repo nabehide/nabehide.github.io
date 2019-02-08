@@ -7,6 +7,8 @@
     <div class="separator"/>
     <Cracker />
     <div class="separator"/>
+    <ThreejsNative />
+    <div class="separator"/>
     <MCVStools />
     <div class="separator"/>
     <Portfolio />
@@ -20,6 +22,7 @@ import Cracker from '~/components/works/Cracker'
 import MCVStools from '~/components/works/MCVStools'
 import Portfolio from '~/components/works/Portfolio'
 import TapAndWifi from '~/components/works/TapAndWifi'
+import ThreejsNative from '~/components/works/ThreejsNative'
 import WalkAndRide from '~/components/works/WalkAndRide'
 export default {
   components: {
@@ -29,6 +32,7 @@ export default {
     MCVStools,
     Portfolio,
     TapAndWifi,
+    ThreejsNative,
     WalkAndRide,
   },
   computed: {

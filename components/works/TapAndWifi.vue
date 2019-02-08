@@ -9,7 +9,7 @@
     "en": {
       "title": "Tap and Wifi",
       "description1": "The app shows store information on map in Japan, includes tap and wifi info.",
-      "description2": "The correct information is refered to each official website.",
+      "description2": "The correct information is referred to each official website.",
       "description3": "React Native is used for development."
     }
   }
@@ -26,7 +26,7 @@
       <p>{{ $t('description2') }}</p>
       <p>{{ $t('description3') }}</p>
       <p>
-        <a href="https://itunes.apple.com/jp/app/%E9%9B%BB%E6%BA%90wifi%E3%82%B5%E3%83%BC%E3%83%81-%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E6%AD%A3%E7%A2%BA%E3%81%AA%E6%83%85%E5%A0%B1%E3%82%92%E6%8E%B2%E8%BC%89/id1448125892?mt=8&ign-mpt=uo%3D4" target="_blank">
+        <a href="https://itunes.apple.com/us/app/%E9%9B%BB%E6%BA%90wifi%E3%82%B5%E3%83%BC%E3%83%81-%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E6%AD%A3%E7%A2%BA%E3%81%AA%E6%83%85%E5%A0%B1%E3%82%92%E6%8E%B2%E8%BC%89/id1448125892" target="_blank">
           <font-awesome-icon :icon="['fab', 'apple']" /> Apple Store (iOS)
         </a>
       </p>
