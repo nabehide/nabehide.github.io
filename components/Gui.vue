@@ -20,16 +20,26 @@ export default {
     guiContainer.appendChild(this.gui.domElement);
 
     if ( flagAudio ) {
-      const general = this.gui.addFolder("general");
-      general.open();
+      const folder = this.gui.addFolder("audio");
+      folder.open();
       const generalState = this.$store.getters["general/state"];
       const state = JSON.parse(JSON.stringify(generalState));
-      general.add(state, "audioSources", state.audioSources).setValue(state.audioSource).listen()
+      folder.add(state, "audioSources", state.audioSources).setValue(state.audioSource).listen()
       .onChange(audioSource => {
         this.$store.commit("general/set", {name: "audioSource", value: audioSource})
         document.getElementById("button").click();
       });
     }
+
+    const folder = this.gui.addFolder("scene");
+    folder.open();
+    const generalState = this.$store.getters["general/state"];
+    const state = JSON.parse(JSON.stringify(generalState));
+    folder.add(state, "scenes", state.scenes).setValue(state.scene).listen()
+    .onChange(scene => {
+      this.$store.commit("general/set", {name: "scene", value: scene});
+      document.getElementById("buttonChangeScene").click();
+    });
 
     const uniformsState = this.$store.getters["uniforms/state"];
     const uniforms = JSON.parse(JSON.stringify(uniformsState));

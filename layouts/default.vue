@@ -3,6 +3,7 @@
     <Navigation/>
     <canvas id="canvas" />
     <button id="button" style="display: none;">button</button>
+    <button id="buttonChangeScene" style="display: none;" @click=handleChangeScene></button>
     <nuxt/>
   </div>
 </template>
@@ -17,6 +18,11 @@ export default {
   mounted () {
     this.three = new Three(this.$store)
     this.three.mounted()
+  },
+  methods: {
+    handleChangeScene () {
+      this.three.initShader();
+    }
   },
 }
 </script>

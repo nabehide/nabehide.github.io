@@ -5,6 +5,12 @@ export const state = () => ({
     "microphone",
   ],
   audioSource: "none",
+
+  scenes: [
+    "orb",
+    "curves",
+  ],
+  scene: "orb",
 });
 
 export const mutations = {

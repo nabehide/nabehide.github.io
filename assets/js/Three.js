@@ -179,7 +179,8 @@ export default class Three {
       this.scene.remove(this.plane)
     }
 
-    const fragmentShader = require('@/assets/glsl/' + "orb" + '/source.frag')
+    const scene = this.store.state.general.scene;
+    const fragmentShader = require('@/assets/glsl/' + scene + '/source.frag')
     const material = new THREE.ShaderMaterial({
       vertexShader: DEFAULT_VERTEX_SHADER,
       fragmentShader: fragmentShader || DEFAULT_FRAGMENT_SHADER,
