@@ -1,6 +1,11 @@
 <template>
   <div id="worksContainer" :class="{'isColorInverted': isColorInverted}">
     <Locale />
+
+    <Tapioca />
+    <div class="separator"/>
+    <CloseButton />
+    <div class="separator"/>
     <WalkAndRide />
     <div class="separator"/>
     <TapAndWifi />
@@ -12,26 +17,35 @@
     <MCVStools />
     <div class="separator"/>
     <Portfolio />
+    <div class="separator"/>
+    <Others />
+
   </div>
 </template>
 
 <script>
 import Locale from '~/components/Locale'
 
+import CloseButton from '~/components/works/CloseButton'
 import Cracker from '~/components/works/Cracker'
 import MCVStools from '~/components/works/MCVStools'
+import Others from '~/components/works/Others'
 import Portfolio from '~/components/works/Portfolio'
 import TapAndWifi from '~/components/works/TapAndWifi'
+import Tapioca from '~/components/works/Tapioca'
 import ThreejsNative from '~/components/works/ThreejsNative'
 import WalkAndRide from '~/components/works/WalkAndRide'
 export default {
   components: {
     Locale,
 
+    CloseButton,
     Cracker,
     MCVStools,
+    Others,
     Portfolio,
     TapAndWifi,
+    Tapioca,
     ThreejsNative,
     WalkAndRide,
   },

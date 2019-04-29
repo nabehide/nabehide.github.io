@@ -1,7 +1,7 @@
 <i18n>
   {
     "ja": {
-      "title": "ウォーキング＆乗換案内",
+      "title": "1駅歩く乗換案内",
       "description1": "「1駅先から乗るルート」と「1駅手前で降りるルート」も同時に検索するアプリケーション。",
       "description2": "フロントエンドはNuxt.js、サーバーサイドはFlaskをHerokuで動かしています。",
       "description3": "スマートフォンアプリはReact Nativeで作成しています。",
