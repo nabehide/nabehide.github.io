@@ -14,33 +14,38 @@
 </i18n>
 
 <template>
-  <section>
-    <h3>
-      <img src="/works/closeButton.png" width="32" height="32" alt="icon" />
-      <span>{{ $t('title') }}</span>
-    </h3>
-    <div class="descriptions">
-      <p>{{ $t('description1') }}</p>
-      <p>{{ $t('description2') }}</p>
-      <p>
-        <a href="https://itunes.apple.com/us/app/close-button/id1457552800" target="_blank">
-          <font-awesome-icon :icon="['fab', 'apple']" /> Apple Store (iOS)
-        </a>
-      </p>
-      <p>
-        <a href="https://play.google.com/store/apps/details?id=com.aderaser" target="_blank">
-          <font-awesome-icon :icon="['fab', 'google-play']" /> Google Play (Android)
-        </a>
-      </p>
-    </div>
-  </section>
+  <WorksComponent
+    :title=title
+    :icon=icon
+    :description1=description1
+    :description2=description2
+    :links=links
+  />
 </template>
 
-<style scoped>
-.descriptions {
-  padding: 0px 0px 0px 10px;
+<script>
+import WorksComponent from './WorksComponent';
+export default {
+  computed: {
+    title() { return this.$t.bind(this)("title") },
+    icon() { return "/works/closeButton.png" },
+    description1() { return this.$t.bind(this)("description1") },
+    description2() { return this.$t.bind(this)("description2") },
+    links() { return [
+      {
+        name: "Apple Store (iOS)",
+        awesome: ["fab", "apple"],
+        url: "https://itunes.apple.com/us/app/close-button/id1457552800",
+      },
+      {
+        name: "Google Play (Android)",
+        awesome: ["fab", "google-play"],
+        url: "https://play.google.com/store/apps/details?id=com.aderaser",
+      },
+    ]},
+  },
+  components: {
+    WorksComponent,
+  },
 }
-h3 img {
-  vertical-align: middle;
-}
-</style>
+</script>

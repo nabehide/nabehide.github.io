@@ -20,39 +20,43 @@
 </i18n>
 
 <template>
-  <section>
-    <h3>
-      <img src="/works/walkandride.png" width="32" height="32" alt="icon" />
-      <span>{{ $t('title') }}</span>
-    </h3>
-    <div class="descriptions">
-      <p>{{ $t('description1') }}</p>
-      <p>{{ $t('description2') }}</p>
-      <p>{{ $t('description3') }}</p>
-      <p>
-        <a href="http://walkandride.html.xdomain.jp" target="_blank">
-          <font-awesome-icon :icon="['fas', 'globe']" /> Web{{ $t('site') }}
-        </a>
-      </p>
-      <p>
-        <a href="https://itunes.apple.com/us/app/%E6%9C%80%E5%AE%89%E4%B9%97%E6%8F%9B%E6%A1%88%E5%86%85-%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0/id1442101438" target="_blank">
-          <font-awesome-icon :icon="['fab', 'apple']" /> Apple Store (iOS)
-        </a>
-      </p>
-      <p>
-        <a href="https://play.google.com/store/apps/details?id=com.walk_and_ride" target="_blank">
-          <font-awesome-icon :icon="['fab', 'google-play']" /> Google Play (Android)
-        </a>
-      </p>
-    </div>
-  </section>
+  <WorksComponent
+    :title=title
+    :icon=icon
+    :description1=description1
+    :description2=description2
+    :links=links
+  />
 </template>
 
-<style scoped>
-.descriptions {
-  padding: 0px 0px 0px 10px;
+<script>
+import WorksComponent from './WorksComponent';
+export default {
+  computed: {
+    title() { return this.$t.bind(this)("title") },
+    icon() { return "/works/walkandride.png" },
+    description1() { return this.$t.bind(this)("description1") },
+    description2() { return this.$t.bind(this)("description2") },
+    links() { return [
+      {
+        name: "Web" + this.$t.bind(this)("site"),
+        awesome: ["fas", "globe"],
+        url: "http://walkandride.html.xdomain.jp",
+      },
+      {
+        name: "Apple Store (iOS)",
+        awesome: ["fab", "apple"],
+        url: "https://itunes.apple.com/us/app/%E6%9C%80%E5%AE%89%E4%B9%97%E6%8F%9B%E6%A1%88%E5%86%85-%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0/id1442101438",
+      },
+      {
+        name: "Google Play (Android)",
+        awesome: ["fab", "google-play"],
+        url: "https://play.google.com/store/apps/details?id=com.walk_and_ride",
+      },
+    ]},
+  },
+  components: {
+    WorksComponent,
+  },
 }
-h3 img {
-  vertical-align: middle;
-}
-</style>
+</script>

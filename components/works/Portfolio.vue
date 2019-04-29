@@ -2,7 +2,7 @@
   {
     "ja": {
       "title": "ポートフォリオ（このサイト）",
-      "description1": "フロントエンドはNuxt.js, THREE.js(WebGL, GLSL)で作成しています。",
+      "description1": "フロントエンドはNuxt.js, three.js(WebGL, glsl)で作成しています。",
       "description2": "Web Audio APIを用いたAudio effectが追加されたバージョンもあります。",
 
       "site": "サイト"
@@ -18,33 +18,38 @@
 </i18n>
 
 <template>
-  <section>
-    <h3>
-      <img src="/thumbnail.png" width="32" height="32" alt="icon" />
-      <span>{{ $t('title') }}</span>
-    </h3>
-    <div class="descriptions">
-      <p>{{ $t('description1') }}</p>
-      <p>{{ $t('description2') }}</p>
-      <p>
-        <a href="https://nabehide.github.io" target="_blank">
-          <font-awesome-icon :icon="['fas', 'globe']" /> Web{{ $t('site') }}
-        </a>
-      </p>
-      <p>
-        <a href="https://nabehide.github.io/portfolio_with_audio_effect" target="_blank">
-          <font-awesome-icon :icon="['fas', 'globe']" /> Web{{ $t('site') }} with audio effect (PC recommended)
-        </a>
-      </p>
-    </div>
-  </section>
+  <WorksComponent
+    :title=title
+    :icon=icon
+    :description1=description1
+    :description2=description2
+    :links=links
+  />
 </template>
 
-<style scoped>
-.descriptions {
-  padding: 0px 0px 0px 10px;
+<script>
+import WorksComponent from './WorksComponent';
+export default {
+  computed: {
+    title() { return this.$t.bind(this)("title") },
+    icon() { return "/thumbnail.png" },
+    description1() { return this.$t.bind(this)("description1") },
+    description2() { return this.$t.bind(this)("description2") },
+    links() { return [
+      {
+        name: "Web" + this.$t.bind(this)("site"),
+        awesome: ["fas", "globe"],
+        url: "https://nabehide.github.io",
+      },
+      {
+        name: "Web" + this.$t.bind(this)("site") + "with audio effect (PC recommended)",
+        awesome: ["fas", "globe"],
+        url: "https://nabehide.github.io",
+      },
+    ]},
+  },
+  components: {
+    WorksComponent,
+  },
 }
-h3 img {
-  vertical-align: middle;
-}
-</style>
+</script>

@@ -6,13 +6,13 @@
     <div class="separator"/>
     <CloseButton />
     <div class="separator"/>
-    <WalkAndRide />
-    <div class="separator"/>
     <TapAndWifi />
+    <div class="separator"/>
+    <ThreejsNative />
     <div class="separator"/>
     <Cracker />
     <div class="separator"/>
-    <ThreejsNative />
+    <WalkAndRide />
     <div class="separator"/>
     <MCVStools />
     <div class="separator"/>
