@@ -6,8 +6,8 @@
       "description2": "React Nativeで作成しています。"
     },
     "en": {
-      "title": "Tapioca map",
-      "description1": "A map app to finds tapioca drink in japan.",
+      "title": "Boba map",
+      "description1": "A map app to finds boba drink in japan.",
       "description2": "The app is created with react native."
     }
   }
