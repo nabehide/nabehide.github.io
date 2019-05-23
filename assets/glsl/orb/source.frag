@@ -7,6 +7,8 @@ uniform float time;
 uniform vec2  resolution;
 
 uniform sampler2D tAudioData;
+uniform float mousex;
+uniform float mousey;
 
 uniform int   isColorInverted;
 uniform int   isGlitched;
@@ -43,6 +45,20 @@ float line(vec2 p, float w){
 void main(void){
     vec2 p = (gl_FragCoord.xy * 2.0 - resolution) / min(resolution.x, resolution.y);
     p -= offsetCenter;
+
+    float dx, dy;
+    float a = 1.5;
+    if (mousex < 0.5) {
+      dx =  pow(0.5-mousex, a);
+    } else {
+      dx = -pow(0.5-mousex, a);
+    }
+    if (mousey < 0.5) {
+      dy = -pow(0.5-mousey, a);
+    } else {
+      dy =  pow(0.5-mousey, a);
+    }
+    p -= vec2(dx, dy);
 
     vec3 draw = vec3(0.0);
 
