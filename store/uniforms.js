@@ -29,7 +29,7 @@ export const state = () => ({
       type: "f",
       value: 1.0,
       min: 0.1,
-      max: 8.0,
+      max: 2.0,
       step: 0.01,
     }
   },
