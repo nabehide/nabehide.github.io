@@ -3,26 +3,27 @@
     <Gui/>
     <div :class="{'container': true, 'isColorInverted': isColorInverted}">
       <div class="intro">
-        <p>nabehide / Engineer</p>
+        <p>nabehide</p>
+        <p>Software Developer</p>
         <p>Tokyo, Japan</p>
-        <p>Love: Programming, Music</p>
 
         <table>
           <tbody>
           <tr>
             <td class="icon"> <a href="https://github.com/nabehide" target="_blank">
-              <font-awesome-icon :icon="['fab', 'github']" />
+              <font-awesome-icon :icon="['fab', 'github']" style="background-color: #333; color: #eee;" />
             </a> </td>
             <td> <a href="https://github.com/nabehide" target="_blank">Github</a> </td>
           </tr>
 
           <tr>
-            <td class="icon"> <a href="https://twitter.com/____nabehide" target="_blank">
-              <font-awesome-icon :icon="['fab', 'twitter']" />
+            <td class="icon"> <a href="https://twitter.com/____nabehide" target="_blank" >
+              <font-awesome-icon :icon="['fab', 'twitter']" style="background-color: #1da1f2; color: #eee;" />
             </a> </td>
             <td> <a href="https://twitter.com/____nabehide" target="_blank">Twitter</a> </td>
           </tr>
 
+          <!--
           <tr>
             <td class="icon"> <a href="https://soundcloud.com/nabehide" target="_blank">
               <font-awesome-icon :icon="['fab', 'soundcloud']" />
@@ -30,17 +31,20 @@
             <td> <a href="https://soundcloud.com/nabehide" target="_blank">Soundcloud</a> </td>
           </tr>
 
-          <!--
           <tr>
             <td> <a href="https://suzuri.jp/____nabehide" target="_blank" class="icon"><img src="/surisurikun.png" width="36px" height="36px" ></a> </td>
             <td> <a href="https://suzuri.jp/____nabehide" target="_blank">Suzuri</a> </td>
           </tr>
+          -->
 
           <tr>
-            <td> <a href="https://qiita.com/nabehide" target="_blank" class="icon"><i></i></a> </td>
+            <td class="icon"> <a href="https://qiita.com/nabehide" target="_blank">
+              <img src="/qiita-favicon.png" width="18px" height="18px" />
+            </a> </td>
             <td> <a href="https://qiita.com/nabehide" target="_blank">Qiita</a> </td>
           </tr>
 
+          <!--
           <tr>
             <td> <a class="icon"></a> </td>
             <td> <a href="https://www.shadertoy.com/user/nabehide" class="text" target="_blank">Shadertoy</a> </td>
@@ -116,5 +120,6 @@ export default {
       }
     }
   }
+
 }
 </style>
