@@ -257,23 +257,23 @@ export default class Three {
       type: "f",
       value: 0.5,
     };
+    /*
     window.onmousemove = () => {
       this.uniforms.mousex.value = event.clientX / window.innerWidth;
       this.uniforms.mousey.value = event.clientY / window.innerHeight;
       // console.log(this.mousex, this.mousey);
     }
 
-    /*
-    window.addEventListener("deviceorientation", (e) => {
-      this.uniforms.mousex.value = (e.beta + 180) / 360;
-      this.uniforms.mousey.value = (e.gamma + 90) / 90;
-      console.log(e.beta, e.gamma);
-    })
-    */
+    // window.addEventListener("deviceorientation", (e) => {
+    //   this.uniforms.mousex.value = (e.beta + 180) / 360;
+    //   this.uniforms.mousey.value = (e.gamma + 90) / 90;
+    //   console.log(e.beta, e.gamma);
+    // })
     window.ondeviceorientation = (e) => {
       this.uniforms.mousex.value = (e.beta + 180) / 360;
       this.uniforms.mousey.value = (e.gamma + 90) / 90;
       console.log(e.beta, e.gamma);
     }
+    */
   }
 }
