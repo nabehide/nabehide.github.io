@@ -2,6 +2,8 @@
   <div id="worksContainer" :class="{'isColorInverted': isColorInverted}">
     <Locale />
 
+    <CodeMemo />
+    <div class="separator"/>
     <Tapioca />
     <div class="separator"/>
     <CloseButton />
@@ -27,6 +29,7 @@
 import Locale from '~/components/Locale'
 
 import CloseButton from '~/components/works/CloseButton'
+import CodeMemo from '~/components/works/CodeMemo'
 import Cracker from '~/components/works/Cracker'
 import MCVStools from '~/components/works/MCVStools'
 import Others from '~/components/works/Others'
@@ -39,6 +42,7 @@ export default {
   components: {
     Locale,
 
+    CodeMemo,
     CloseButton,
     Cracker,
     MCVStools,
