@@ -45,6 +45,7 @@ export default {
 }
 h3 img {
   vertical-align: middle;
+  border-radius: 5px;
 }
 table {
   margin: 10px 0px;
