@@ -2,6 +2,8 @@
   <div id="worksContainer" :class="{'isColorInverted': isColorInverted}">
     <Locale />
 
+    <Zussie />
+    <div class="separator"/>
     <Tapioca />
     <div class="separator"/>
     <CloseButton />
@@ -35,6 +37,7 @@ import TapAndWifi from '~/components/works/TapAndWifi'
 import Tapioca from '~/components/works/Tapioca'
 import ThreejsNative from '~/components/works/ThreejsNative'
 import WalkAndRide from '~/components/works/WalkAndRide'
+import Zussie from '~/components/works/Zussie'
 export default {
   components: {
     Locale,
@@ -48,6 +51,7 @@ export default {
     Tapioca,
     ThreejsNative,
     WalkAndRide,
+    Zussie,
   },
   computed: {
     isColorInverted () { return this.$store.state.uniforms.color.isColorInverted.value }
