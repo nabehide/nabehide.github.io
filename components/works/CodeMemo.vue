@@ -4,13 +4,13 @@
       "title": "コード歌詞メモ帳",
       "description1": "音楽コードをタップだけで簡単にメモできるアプリ。",
       "description2": "React Nativeで作成しています。",
-      "country": "jp"
+      "country": "jp/app/コード歌詞メモ帳"
     },
     "en": {
       "title": "Code and Lyrics Memos",
       "description1": "A memo app to keep your music codes.",
       "description2": "The app is created with react native.",
-      "country": "us"
+      "country": "us/app/code-and-lyrics-memos"
     }
   }
 </i18n>
@@ -37,7 +37,7 @@ export default {
       {
         name: "Apple Store (iOS)",
         awesome: ["fab", "apple"],
-        url: "https://apps.apple.com/" + this.$t.bind(this)("country") + "/app/id1479015907",
+        url: "https://itunes.apple.com/" + this.$t.bind(this)("country") + "/id1479015907",
       },
       {
         name: "Google Play (Android)",
