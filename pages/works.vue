@@ -61,13 +61,18 @@ export default {
 
 <style scoped lang="scss">
 #worksContainer {
-  margin: 50px 5px 0px 5px;
+  margin: 35px 20px 0px 20px;
+  padding-top: 15px;
+  // background-color: rgba(32, 32, 32, 0.1);
 }
 
 .separator {
   border: solid thin #111;
+  margin: 20px 0px 30px 0px;
 }
 .isColorInverted {
+  // background-color: rgba(240, 240, 240, 1.0);
+
   .separator {
     border: solid thin #eee;
   }
