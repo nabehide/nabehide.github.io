@@ -39,12 +39,12 @@ export default {
       {
         name: "Web" + this.$t.bind(this)("site"),
         awesome: ["fas", "globe"],
-        url: "https://nabehide.github.io",
+        url: "/",
       },
       {
-        name: "Web" + this.$t.bind(this)("site") + "with audio effect (PC recommended)",
+        name: "Web" + this.$t.bind(this)("site") + " with audio effect (PC recommended)",
         awesome: ["fas", "globe"],
-        url: "https://nabehide.github.io",
+        url: "/portfolio_with_audio_effect",
       },
     ]},
   },
