@@ -11,7 +11,8 @@
     "generate": "nuxt generate",
     "deploy": "git subtree push --prefix dist/ origin master",
     "generate:audio": "NODE_ENV=audio nuxt generate",
-    "deploy:audio": "git subtree push --prefix audio/ audio master"
+    "deploy:audio": "git subtree push --prefix audio/ audio master",
+    "hosting": "firebase deploy"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
