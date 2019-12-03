@@ -4,13 +4,15 @@
       "title": "コード歌詞メモ帳",
       "description1": "音楽コードをタップだけで簡単にメモできるアプリ。",
       "description2": "React Nativeで作成しています。",
-      "country": "jp/app/コード歌詞メモ帳"
+      "country": "jp/app/コード歌詞メモ帳",
+      "site": "サイト"
     },
     "en": {
-      "title": "Code and Lyrics Memos",
+      "title": "Chord Memos",
       "description1": "A memo app to keep your music codes.",
       "description2": "The app is created with react native.",
-      "country": "us/app/code-and-lyrics-memos"
+      "country": "us/app/code-and-lyrics-memos",
+      "site": "site"
     }
   }
 </i18n>
@@ -43,6 +45,11 @@ export default {
         name: "Google Play (Android)",
         awesome: ["fab", "google-play"],
         url: "https://play.google.com/store/apps/details?id=com.codelyricsmemo",
+      },
+      {
+        name: "Web" + this.$t.bind(this)("site"),
+        awesome: ["fas", "globe"],
+        url: "https://chord-memos.nabehide.com",
       },
     ]},
   },
