@@ -1,1 +1,1 @@
-export const flagAudio = false;
+export const flagAudio = true;
