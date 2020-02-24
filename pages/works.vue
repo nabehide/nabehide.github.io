@@ -4,19 +4,13 @@
 
     <Zussie />
     <div class="separator"/>
-    <CodeMemo />
+    <ChordMemos />
     <div class="separator"/>
     <Tapioca />
-    <div class="separator"/>
-    <CloseButton />
     <div class="separator"/>
     <TapAndWifi />
     <div class="separator"/>
     <ThreejsNative />
-    <div class="separator"/>
-    <Cracker />
-    <div class="separator"/>
-    <WalkAndRide />
     <div class="separator"/>
     <MCVStools />
     <div class="separator"/>
@@ -30,31 +24,25 @@
 <script>
 import Locale from '~/components/Locale'
 
-import CloseButton from '~/components/works/CloseButton'
-import CodeMemo from '~/components/works/CodeMemo'
-import Cracker from '~/components/works/Cracker'
+import ChordMemos from '~/components/works/ChordMemos'
 import MCVStools from '~/components/works/MCVStools'
 import Others from '~/components/works/Others'
 import Portfolio from '~/components/works/Portfolio'
 import TapAndWifi from '~/components/works/TapAndWifi'
 import Tapioca from '~/components/works/Tapioca'
 import ThreejsNative from '~/components/works/ThreejsNative'
-import WalkAndRide from '~/components/works/WalkAndRide'
 import Zussie from '~/components/works/Zussie'
 export default {
   components: {
     Locale,
 
-    CodeMemo,
-    CloseButton,
-    Cracker,
+    ChordMemos,
     MCVStools,
     Others,
     Portfolio,
     TapAndWifi,
     Tapioca,
     ThreejsNative,
-    WalkAndRide,
     Zussie,
   },
   computed: {

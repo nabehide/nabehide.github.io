@@ -1,17 +1,17 @@
 <i18n>
   {
     "ja": {
-      "title": "コード歌詞メモ帳",
-      "description1": "音楽コードをタップだけで簡単にメモできるアプリ。",
+      "title": "コードメモ",
+      "description1": "音楽のコード進行を簡単にメモできるアプリ。",
       "description2": "React Nativeで作成しています。",
-      "country": "jp/app/コード歌詞メモ帳",
+      "country": "jp/app",
       "site": "サイト"
     },
     "en": {
       "title": "Chord Memos",
-      "description1": "A memo app to keep your music codes.",
+      "description1": "A memo app for chord progression.",
       "description2": "The app is created with react native.",
-      "country": "us/app/code-and-lyrics-memos",
+      "country": "us/app",
       "site": "site"
     }
   }
@@ -32,7 +32,7 @@ import WorksComponent from './WorksComponent';
 export default {
   computed: {
     title() { return this.$t.bind(this)("title") },
-    icon() { return "/works/CodeMemo.png" },
+    icon() { return "/works/ChordMemos.png" },
     description1() { return this.$t.bind(this)("description1") },
     description2() { return this.$t.bind(this)("description2") },
     links() { return [
