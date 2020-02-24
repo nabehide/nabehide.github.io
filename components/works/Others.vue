@@ -37,12 +37,12 @@ export default {
     description2() { return this.$t.bind(this)("description2") },
     links() { return [
       {
-        name: "Apple Store (iOS)",
+        name: "Apple Store",
         awesome: ["fab", "apple"],
         url: "https://itunes.apple.com/us/developer/hidetoshi-watanabe/id1442101437#see-all/i-phonei-pad-apps",
       },
       {
-        name: "Google Play (Android)",
+        name: "Google Play Store",
         awesome: ["fab", "google-play"],
         url: "https://play.google.com/store/apps/collection/cluster?clp=igMxChkKEzUzMTcyOTYxMjAyNDE0OTg5MzkQCBgDEhIKDGNvbS5hZGVyYXNlchABGAMYAQ%3D%3D:S:ANO1ljIo3w8&gsr=CjSKAzEKGQoTNTMxNzI5NjEyMDI0MTQ5ODkzORAIGAMSEgoMY29tLmFkZXJhc2VyEAEYAxgB:S:ANO1ljK2fLU",
       },

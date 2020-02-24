@@ -8,12 +8,21 @@
       <p>{{ description1 }}</p>
       <p>{{ description2 }}</p>
 
-      <div style="display: flex;">
-        <div v-for="tag in tags">
+      <div style="display: flex; flex-wrap: wrap;">
+        <div v-for="tag in tags" class="tag">
           <span>{{ tag }}</span>
         </div>
       </div>
 
+      <div class="buttons">
+        <div v-for="link in links">
+          <a :href=link.url target="_blank" class="button" >
+            <font-awesome-icon :icon="[link.awesome[0], link.awesome[1]]" class="button_icon" />
+            <span class="button_text">{{ link.name }}</span>
+          </a>
+        </div>
+      </div>
+      <!--
       <table>
         <tbody>
           <tr v-for="link in links" >
@@ -30,6 +39,7 @@
           </tr>
         </tbody>
       </table>
+      -->
     </div>
   </section>
 </template>
@@ -48,7 +58,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 section {
   background-color: rgba(255,255,255,0.3);
   border-radius: 5px;
@@ -81,9 +91,92 @@ h3 img {
   border-radius: 5px;
   margin-right: 10px;
 }
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+a {
+  text-decoration: none;
+}
+.button_icon {
+  font-size: 20px;
+  flex-grow: 1;
+}
+.button_text {
+  flex-grow: 10;
+  text-align: center;
+}
+.button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #111;
+  border-radius: 20px;
+  display: flex;
+  /*
+  justify-content: space-around;
+  */
+  align-items: center;
+  text-align: center;
+  * {
+    color: #eee,
+  }
+}
+.isColorInverted .button {
+  background-color: #eee;
+  * {
+    color: #111,
+  }
+}
+.button,
+.button::before,
+.button::after {
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+.button:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+.isColorInverted .button:hover {
+  background-color: rgba(255,255,255,0.6);
+}
+/*
 table {
   margin: 10px 0px;
   border-collapse: separate;
   border-spacing: 5px;
+}
+*/
+.tag {
+  margin: 5px 5px;
+  padding: 5px 10px;
+
+  /* square border
+  border: 1px solid;
+  span {
+    font-size: 14px;
+  }
+  */
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: #111;
+  span {
+    font-size: 14px;
+  }
+  /* rounded filled
+  background-color: #111;
+  span {
+    color: #eee;
+  }
+  */
+}
+.isColorInverted .tag {
+  border-color: #eee;
+  /* rounded filled
+  background-color: #eee;
+  span {
+    color: #111;
+  }
+  */
 }
 </style>

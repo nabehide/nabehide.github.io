@@ -11,7 +11,6 @@
       <Tapioca :isColorInverted="isColorInverted"/>
       <TapAndWifi :isColorInverted="isColorInverted"/>
       <ThreejsNative :isColorInverted="isColorInverted"/>
-      <MCVStools :isColorInverted="isColorInverted"/>
       <Portfolio :isColorInverted="isColorInverted"/>
       <Others :isColorInverted="isColorInverted"/>
 
@@ -23,7 +22,6 @@
 import Locale from '~/components/Locale'
 
 import ChordMemos from '~/components/works/ChordMemos'
-import MCVStools from '~/components/works/MCVStools'
 import Others from '~/components/works/Others'
 import Portfolio from '~/components/works/Portfolio'
 import TapAndWifi from '~/components/works/TapAndWifi'
@@ -35,7 +33,6 @@ export default {
     Locale,
 
     ChordMemos,
-    MCVStools,
     Others,
     Portfolio,
     TapAndWifi,

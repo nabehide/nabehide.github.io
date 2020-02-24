@@ -25,6 +25,7 @@
     :description2=description2
     :links=links
     :isColorInverted=isColorInverted
+    :tags=tags
   />
 </template>
 
@@ -39,6 +40,9 @@ export default {
     icon() { return "/thumbnail.png" },
     description1() { return this.$t.bind(this)("description1") },
     description2() { return this.$t.bind(this)("description2") },
+    tags() { return [
+      "Nuxt.js",
+    ]},
     links() { return [
       {
         name: "Web" + this.$t.bind(this)("site"),

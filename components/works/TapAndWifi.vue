@@ -1,14 +1,14 @@
 <i18n>
   {
     "ja": {
-      "title": "電源Wifiサーチ",
-      "description1": "電源（コンセント）やWifiの使用可否を地図上に表示するアプリケーション。",
-      "description2": "スマートフォンアプリはReact Nativeで作成しています。お店の公式サイトの情報はPythonでWebスクレイピングしています。"
+      "title": "電源Wi-Fiマップ",
+      "description1": "電源（コンセント）やWi-Fiの使用可否を地図上に表示するアプリケーション。",
+      "description2": "お店の公式サイトの情報はPythonでWebスクレイピングしています。"
     },
     "en": {
-      "title": "Tap and Wifi",
-      "description1": "The app shows store information on map in Japan, includes tap and wifi info. The correct information is referred to each official website.",
-      "description2": "React Native is used for development."
+      "title": "Charge and Wi-Fi Japan",
+      "description1": "The app shows charge / Wi-Fi spots in Japan.",
+      "description2": "The information is scraped from each official website. "
     }
   }
 </i18n>
@@ -21,6 +21,7 @@
     :description2=description2
     :links=links
     :isColorInverted=isColorInverted
+    :tags=tags
   />
 </template>
 
@@ -35,14 +36,19 @@ export default {
     icon() { return "/works/tapandwifi.png" },
     description1() { return this.$t.bind(this)("description1") },
     description2() { return this.$t.bind(this)("description2") },
+    tags() { return [
+      "React Native",
+      "Expo",
+      "Python Selenium",
+    ]},
     links() { return [
       {
-        name: "Apple Store (iOS)",
+        name: "Apple Store",
         awesome: ["fab", "apple"],
         url: "https://itunes.apple.com/us/app//id1448125892",
       },
       {
-        name: "Google Play (Android)",
+        name: "Google Play Store",
         awesome: ["fab", "google-play"],
         url: "https://play.google.com/store/apps/details?id=com.tapandwifi",
       },

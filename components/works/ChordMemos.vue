@@ -3,16 +3,16 @@
     "ja": {
       "title": "コードメモ",
       "description1": "音楽のコード進行を簡単にメモできるアプリ。",
-      "description2": "React Nativeで作成しています。",
+      "description2": " ",
       "country": "jp/app",
-      "site": "サイト"
+      "LP": "ランディングページ"
     },
     "en": {
       "title": "Chord Memos",
       "description1": "A memo app for chord progression.",
-      "description2": "The app is created with react native.",
+      "description2": " ",
       "country": "us/app",
-      "site": "site"
+      "LP": "Landing Page"
     }
   }
 </i18n>
@@ -25,6 +25,7 @@
     :description2=description2
     :links=links
     :isColorInverted=isColorInverted
+    :tags=tags
   />
 </template>
 
@@ -39,19 +40,24 @@ export default {
     icon() { return "/works/ChordMemos.png" },
     description1() { return this.$t.bind(this)("description1") },
     description2() { return this.$t.bind(this)("description2") },
+    tags() { return [
+      "React Native",
+      "i18n",
+      "Nuxt.js",
+    ]},
     links() { return [
       {
-        name: "Apple Store (iOS)",
+        name: "Apple Store",
         awesome: ["fab", "apple"],
         url: "https://itunes.apple.com/" + this.$t.bind(this)("country") + "/id1479015907",
       },
       {
-        name: "Google Play (Android)",
+        name: "Google Play Store",
         awesome: ["fab", "google-play"],
         url: "https://play.google.com/store/apps/details?id=com.codelyricsmemo",
       },
       {
-        name: "Web" + this.$t.bind(this)("site"),
+        name: this.$t.bind(this)("LP"),
         awesome: ["fas", "globe"],
         url: "https://chord-memos.nabehide.com",
       },

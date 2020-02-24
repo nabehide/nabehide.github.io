@@ -2,16 +2,14 @@
   {
     "ja": {
       "title": "ポートフォリオ",
-      "description1": "フロントエンドはNuxt.js, three.js(WebGL, glsl)で作成しています。",
-      "description2": "Web Audio APIを用いたAudio effectが追加されたバージョンもあります。",
-
+      "description1": "Web Audio APIを用いたAudio effectが追加されたバージョンもあります。（PC推奨）",
+      "description2": " ",
       "site": "サイト"
     },
     "en": {
       "title": "Portfolio (this site)",
-      "description1": "The website is created with Nuxt.js and Three.js(WebGL, GLSL).",
-      "description2": "Another version with audio effect using Web Audio API (music, microphone) is available.",
-
+      "description1": "Thre is another version with audio effect using Web Audio API. (PC recommended)",
+      "description2": " ",
       "site": "site"
     }
   }
@@ -25,6 +23,7 @@
     :description2=description2
     :links=links
     :isColorInverted=isColorInverted
+    :tags=tags
   />
 </template>
 
@@ -39,6 +38,13 @@ export default {
     icon() { return "/thumbnail.png" },
     description1() { return this.$t.bind(this)("description1") },
     description2() { return this.$t.bind(this)("description2") },
+    tags() { return [
+      "Nuxt.js",
+      "Three.js",
+      "GLSL",
+      "Web Audio API",
+      "i18n",
+    ]},
     links() { return [
       {
         name: "Web" + this.$t.bind(this)("site"),
@@ -46,7 +52,7 @@ export default {
         url: "/",
       },
       {
-        name: "Web" + this.$t.bind(this)("site") + " with audio effect (PC recommended)",
+        name: "Web" + this.$t.bind(this)("site") + " with audio effect",
         awesome: ["fas", "globe"],
         url: "https://nabehide.github.io/portfolio_with_audio_effect",
       },
