@@ -1,14 +1,14 @@
 <i18n>
   {
     "ja": {
-      "title": "ポートフォリオ（このサイト）",
+      "title": "ポートフォリオ",
       "description1": "フロントエンドはNuxt.js, three.js(WebGL, glsl)で作成しています。",
       "description2": "Web Audio APIを用いたAudio effectが追加されたバージョンもあります。",
 
       "site": "サイト"
     },
     "en": {
-      "title": "Portfolio(this site)",
+      "title": "Portfolio (this site)",
       "description1": "The website is created with Nuxt.js and Three.js(WebGL, GLSL).",
       "description2": "Another version with audio effect using Web Audio API (music, microphone) is available.",
 
@@ -24,12 +24,16 @@
     :description1=description1
     :description2=description2
     :links=links
+    :isColorInverted=isColorInverted
   />
 </template>
 
 <script>
 import WorksComponent from './WorksComponent';
 export default {
+  props: {
+    isColorInverted: Boolean,
+  },
   computed: {
     title() { return this.$t.bind(this)("title") },
     icon() { return "/thumbnail.png" },

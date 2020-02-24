@@ -109,8 +109,10 @@ export default {
       align-items: center;
       flex-direction: column;
 
-      /*
       padding: 10px 20px;
+      border-radius: 5px;
+
+      /* border
       border-top: thin solid #eee;
       border-bottom: thin solid #eee;
       */
@@ -130,6 +132,13 @@ export default {
       }
     }
   }
-
 }
+/* background color
+.inner {
+  background-color: rgba(255,255,255,0.5);
+}
+.isColorInverted .inner {
+  background-color: rgba(0,0,0,0.5);
+}
+*/
 </style>

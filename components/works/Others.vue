@@ -20,12 +20,16 @@
     :description1=description1
     :description2=description2
     :links=links
+    :isColorInverted=isColorInverted
   />
 </template>
 
 <script>
 import WorksComponent from './WorksComponent';
 export default {
+  props: {
+    isColorInverted: Boolean,
+  },
   computed: {
     title() { return this.$t.bind(this)("title") },
     icon() { return "/thumbnail.png" },
