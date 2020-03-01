@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     title() { return this.$t.bind(this)("title") },
-    icon() { return "/works/tapandwifi.png" },
+    icon() { return "/works/charge-wifi.png" },
     description1() { return this.$t.bind(this)("description1") },
     description2() { return this.$t.bind(this)("description2") },
     tags() { return [
