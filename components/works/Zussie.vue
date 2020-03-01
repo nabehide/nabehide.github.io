@@ -40,7 +40,9 @@ export default {
     description2() { return this.$t.bind(this)("description2") },
     tags() { return [
       "Unity",
-      "Firebase",
+      "Unity IAP",
+      "Firebase Cloud Firestore",
+      "Firebase Functions",
     ]},
     links() { return [
       {
