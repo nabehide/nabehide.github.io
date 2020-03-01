@@ -16,7 +16,7 @@
 
       <div class="buttons">
         <div v-for="link in links">
-          <a :href=link.url target="_blank" class="button" >
+          <a :href=link.url target="_blank" rel="noopener" class="button" >
             <font-awesome-icon :icon="[link.awesome[0], link.awesome[1]]" class="button_icon" />
             <span class="button_text">{{ link.name }}</span>
           </a>
