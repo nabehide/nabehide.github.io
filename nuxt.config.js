@@ -3,8 +3,8 @@ const pkg = require('./package')
 const moduleCommon = [
   'nuxt-i18n', {
     locales: [
-      { code: 'ja', iso: 'ja_JP' },
-      { code: 'en', iso: 'en_US' },
+      "ja",
+      "en",
     ],
     defaultLocale: 'ja',
     vueI18n: {

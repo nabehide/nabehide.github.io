@@ -9,8 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "git subtree push --prefix dist/ origin master",
-    "generate:audio": "NODE_ENV=audio nuxt generate",
+    "generate:audio": "NODE_ENV=audio nuxt generate; rm dist/mece.m4a",
     "deploy:audio": "git subtree push --prefix audio/ audio master",
     "hosting": "firebase deploy"
   },
