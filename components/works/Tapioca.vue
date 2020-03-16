@@ -3,12 +3,12 @@
     "ja": {
       "title": "タピオカマップ",
       "description1": "近くのタピオカドリンクのお店が見つかるスマートフォンアプリ。",
-      "description2": " "
+      "description2": "お店のデータベースはWebスクレイピングで自動化しています。"
     },
     "en": {
       "title": "Boba map",
       "description1": "A map app to finds boba drink in japan.",
-      "description2": " "
+      "description2": "The database is updated automatically with web scraping."
     }
   }
 </i18n>
@@ -38,6 +38,7 @@ export default {
     description2() { return this.$t.bind(this)("description2") },
     tags() { return [
       "React Native",
+      "Expo",
       "Python Selenium",
     ]},
     links() { return [

@@ -9,7 +9,7 @@
     "en": {
       "title": "Zussie's music game for a good ear",
       "description1": "A game app for training a good ear for pitch.",
-      "description2": "Over 20,000 downloads in a week!",
+      "description2": "Over 20,000 downloads in a first week!",
       "zussie": "Music lesson by Zussie"
     }
   }
@@ -42,7 +42,6 @@ export default {
       "Unity",
       "Unity IAP",
       "Firebase Cloud Firestore",
-      "Firebase Functions",
     ]},
     links() { return [
       {
@@ -57,7 +56,7 @@ export default {
       },
       {
         name: this.$t.bind(this)("zussie"),
-        awesome: ["fas", "globe"],
+        awesome: ["fas", "external-link-alt"],
         url: "https://zussie-piano.com/app-introduction/",
       },
     ]},

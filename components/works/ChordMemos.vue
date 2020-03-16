@@ -2,7 +2,7 @@
   {
     "ja": {
       "title": "コードメモ",
-      "description1": "音楽のコード進行を簡単にメモできるアプリ。",
+      "description1": "音楽のコード進行を簡単にメモできるスマートフォンアプリ。",
       "description2": " ",
       "country": "jp/app",
       "LP": "ランディングページ"
@@ -44,6 +44,7 @@ export default {
       "React Native",
       "i18n",
       "Nuxt.js",
+      "Firebase hosting",
     ]},
     links() { return [
       {
@@ -58,7 +59,7 @@ export default {
       },
       {
         name: this.$t.bind(this)("LP"),
-        awesome: ["fas", "globe"],
+        awesome: ["fas", "external-link-alt"],
         url: "https://chord-memos.nabehide.com",
       },
     ]},

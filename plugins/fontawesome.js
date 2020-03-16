@@ -3,6 +3,8 @@ import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import {
+  faChevronDown,
+  faExternalLinkAlt,
   faGlobe,
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -17,6 +19,8 @@ import {
 config.autoAddCss = false
 
 library.add(
+  faChevronDown,
+  faExternalLinkAlt,
   faGlobe,
 
   faApple,

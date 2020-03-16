@@ -2,14 +2,14 @@
   {
     "ja": {
       "title": "ポートフォリオ",
-      "description1": "Web Audio APIを用いたAudio effectが追加されたバージョンもあります。（PC推奨）",
-      "description2": " ",
+      "description1": "背景はフラグメントシェーダで作成しています。",
+      "description2": "Web Audio APIを用いたAudio effectが追加されたバージョンもあります。（PC推奨）",
       "site": "サイト"
     },
     "en": {
-      "title": "Portfolio (this site)",
-      "description1": "Thre is another version with audio effect using Web Audio API. (PC recommended)",
-      "description2": " ",
+      "title": "Portfolio",
+      "description1": "The background was created with fragment shader.",
+      "description2": "There is another version with audio effect using Web Audio API. (PC recommended)",
       "site": "site"
     }
   }
@@ -48,12 +48,12 @@ export default {
     links() { return [
       {
         name: "Web" + this.$t.bind(this)("site"),
-        awesome: ["fas", "globe"],
+        awesome: ["fas", "external-link-alt"],
         url: "/",
       },
       {
         name: "Web" + this.$t.bind(this)("site") + " with audio effect",
-        awesome: ["fas", "globe"],
+        awesome: ["fas", "external-link-alt"],
         url: "https://nabehide.github.io/portfolio_with_audio_effect",
       },
     ]},

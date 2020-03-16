@@ -115,9 +115,10 @@ a {
 .button_icon {
   font-size: 20px;
   flex-grow: 1;
+  margin: 0px 10px;
 }
 .button_text {
-  flex-grow: 10;
+  flex-grow: 100;
   text-align: center;
 }
 .button {
