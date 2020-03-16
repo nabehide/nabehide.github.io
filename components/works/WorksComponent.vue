@@ -1,46 +1,48 @@
 <template>
   <section :class="{'isColorInverted': isColorInverted}">
-    <h3>
-      <img :src=icon width="32" height="32" alt="icon" />
-      <span>{{ title }}</span>
-    </h3>
-    <div class="descriptions">
-      <p>{{ description1 }}</p>
-      <p>{{ description2 }}</p>
+    <div>
+      <h3>
+        <img :src=icon width="32" height="32" alt="icon" />
+        <span>{{ title }}</span>
+      </h3>
+      <div class="descriptions">
+        <p>{{ description1 }}</p>
+        <p>{{ description2 }}</p>
 
-      <div style="display: flex; flex-wrap: wrap;">
-        <div v-for="tag in tags" class="tag">
-          <span>{{ tag }}</span>
+        <div style="display: flex; flex-wrap: wrap;">
+          <div v-for="tag in tags" class="tag">
+            <span>{{ tag }}</span>
+          </div>
         </div>
       </div>
-
-      <div class="buttons">
-        <div v-for="link in links">
-          <a :href=link.url target="_blank" rel="noopener" class="button" >
-            <font-awesome-icon :icon="[link.awesome[0], link.awesome[1]]" class="button_icon" />
-            <span class="button_text">{{ link.name }}</span>
-          </a>
-        </div>
-      </div>
-      <!--
-      <table>
-        <tbody>
-          <tr v-for="link in links" >
-            <td>
-              <a :href=link.url target="_blank" >
-                <font-awesome-icon :icon="[link.awesome[0], link.awesome[1]]" />
-              </a>
-            </td>
-            <td>
-              <a :href=link.url target="_blank" >
-                {{ link.name }}
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      -->
     </div>
+
+    <div class="buttons">
+      <div v-for="link in links">
+        <a :href=link.url target="_blank" rel="noopener" class="button" >
+          <font-awesome-icon :icon="[link.awesome[0], link.awesome[1]]" class="button_icon" />
+          <span class="button_text">{{ link.name }}</span>
+        </a>
+      </div>
+    </div>
+    <!--
+    <table>
+      <tbody>
+        <tr v-for="link in links" >
+          <td>
+            <a :href=link.url target="_blank" >
+              <font-awesome-icon :icon="[link.awesome[0], link.awesome[1]]" />
+            </a>
+          </td>
+          <td>
+            <a :href=link.url target="_blank" >
+              {{ link.name }}
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    -->
   </section>
 </template>
 
@@ -62,8 +64,15 @@ export default {
 section {
   background-color: rgba(255,255,255,0.3);
   border-radius: 5px;
+  /*
+  border: solid thin rgba(0,0,0,0.5);
+  */
   width: 90%;
   margin: 20px 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media screen and (min-width: 770px) {
   section {
@@ -77,12 +86,16 @@ section {
 }
 .isColorInverted {
   background-color: rgba(0,0,0,0.5);
+  /*
+  border-color: rgba(255,255,255,0.7);
+  */
 }
 .descriptions {
   padding: 0px 10px;
 }
 h3 {
   padding: 10px;
+  margin: 10px 0px;
   display: flex;
   align-items: center;
 }
@@ -94,7 +107,7 @@ h3 img {
 .buttons {
   display: flex;
   flex-direction: column;
-  margin: 10px 0px;
+  margin: 10px 10px;
 }
 a {
   text-decoration: none;
@@ -157,7 +170,9 @@ table {
     font-size: 14px;
   }
   */
+  /*
   border-radius: 20px;
+  */
   border: 1px solid;
   border-color: #111;
   span {
