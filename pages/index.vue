@@ -3,6 +3,8 @@
     <Gui/>
     <div :class="{'container': true, 'isColorInverted': isColorInverted}">
       <div class="intro">
+        <div style="height: 50px;" />
+
         <div class="inner" >
           <p>nabehide</p>
           <p>Software Developer</p>
@@ -65,19 +67,45 @@
             </tbody>
           </table>
         </div>
+
+        <div style="margin-bottom: 20px;">
+          <!--
+          <nuxt-link to="#about" style="text-decoration: none;">
+            <font-awesome-icon :icon="['fas', 'chevron-down']" class="button_icon" />
+            <span>scroll</span>
+          </nuxt-link>
+          -->
+          <button @click="scrollDown" class="button_scroll" style="">
+            <font-awesome-icon :icon="['fas', 'chevron-down']"/>
+            <span>scroll</span>
+          </button>
+        </div>
+
       </div>
+
+      <div id="about" style="margin: 20px;">
+        <About :isColorInverted=isColorInverted />
+      </div>
+
     </div>
   </div>
 </template>
 
 <script>
+import About from '~/components/About';
 import Gui from '~/components/Gui'
 export default {
   components: {
+    About,
     Gui,
   },
   computed: {
     isColorInverted () { return this.$store.state.uniforms.color.isColorInverted.value }
+  },
+  methods: {
+    scrollDown () {
+      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    }
   },
 }
 </script>
@@ -96,7 +124,7 @@ export default {
   .intro {
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     p {
@@ -141,4 +169,9 @@ export default {
   background-color: rgba(0,0,0,0.5);
 }
 */
+.button_scroll {
+  background: none;
+  border: none;
+  outline: none;
+}
 </style>
