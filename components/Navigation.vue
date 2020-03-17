@@ -1,9 +1,11 @@
 <i18n>
   {
     "ja": {
+      "topPath": "/",
       "workPath": "/works"
     },
     "en": {
+      "topPath": "/en",
       "workPath": "/en/works"
     }
   }
@@ -12,10 +14,7 @@
 <template>
   <div :class="{'container': true, 'isColorInverted': isColorInverted}">
     <ul>
-      <li><nuxt-link to="/">Top</nuxt-link></li>
-      <!--
-      <li><nuxt-link to="/works">Works</nuxt-link></li>
-      -->
+      <li><nuxt-link :to="$t('topPath')">Top</nuxt-link></li>
       <li><nuxt-link :to="$t('workPath')">Works</nuxt-link></li>
     </ul>
   </div>
