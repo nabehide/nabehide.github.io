@@ -83,7 +83,17 @@
 
       </div>
 
-      <div id="about" style="margin: 20px;">
+      <div id="works" class="title_with_locale">
+        <h2>Works</h2>
+        <Locale/>
+      </div>
+      <Works :isColorInverted=isColorInverted />
+
+      <div id="about" class="title_with_locale">
+        <h2>About</h2>
+        <Locale/>
+      </div>
+      <div style="margin: 20px;">
         <About :isColorInverted=isColorInverted />
       </div>
 
@@ -94,17 +104,22 @@
 <script>
 import About from '~/components/About';
 import Gui from '~/components/Gui'
+import Locale from '~/components/Locale';
+import Works from '~/components/works';
+
 export default {
   components: {
     About,
     Gui,
+    Locale,
+    Works,
   },
   computed: {
     isColorInverted () { return this.$store.state.uniforms.color.isColorInverted.value }
   },
   methods: {
     scrollDown () {
-      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('works').scrollIntoView({ behavior: 'smooth' });
     }
   },
 }
@@ -173,5 +188,12 @@ export default {
   background: none;
   border: none;
   outline: none;
+}
+.title_with_locale {
+  margin: 30px 30px 0px 30px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 </style>

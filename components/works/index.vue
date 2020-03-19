@@ -1,27 +1,19 @@
 <template>
-  <div>
-    <!--
-    <div style="margin-top: 35px;">
-      <Locale :class="{'isColorInverted': isColorInverted}" />
-    </div>
-    -->
+  <div id="worksContainer">
 
-    <div id="worksContainer">
+    <ChordMemos :isColorInverted="isColorInverted" />
+    <Tapioca :isColorInverted="isColorInverted"/>
+    <Zussie :isColorInverted="isColorInverted" />
+    <TapAndWifi :isColorInverted="isColorInverted"/>
+    <ThreejsNative :isColorInverted="isColorInverted"/>
+    <Portfolio :isColorInverted="isColorInverted"/>
+    <Others :isColorInverted="isColorInverted"/>
 
-      <Zussie :isColorInverted="isColorInverted" />
-      <ChordMemos :isColorInverted="isColorInverted" />
-      <Tapioca :isColorInverted="isColorInverted"/>
-      <TapAndWifi :isColorInverted="isColorInverted"/>
-      <ThreejsNative :isColorInverted="isColorInverted"/>
-      <Portfolio :isColorInverted="isColorInverted"/>
-      <Others :isColorInverted="isColorInverted"/>
-
-    </div>
   </div>
 </template>
 
 <script>
-// import Locale from '~/components/Locale'
+import Locale from '~/components/Locale'
 
 import ChordMemos from '~/components/works/ChordMemos'
 import Others from '~/components/works/Others'
@@ -31,8 +23,11 @@ import Tapioca from '~/components/works/Tapioca'
 import ThreejsNative from '~/components/works/ThreejsNative'
 import Zussie from '~/components/works/Zussie'
 export default {
+  props: {
+    isColorInverted: Boolean,
+  },
   components: {
-    // Locale,
+    Locale,
 
     ChordMemos,
     Others,
@@ -42,16 +37,11 @@ export default {
     ThreejsNative,
     Zussie,
   },
-  computed: {
-    isColorInverted () { return this.$store.state.uniforms.color.isColorInverted.value }
-  },
 }
 </script>
 
 <style scoped lang="scss">
 #worksContainer {
-  padding-top: 15px;
-
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

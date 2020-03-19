@@ -20,12 +20,13 @@
 <template>
   <div :class="{'isColorInverted': isColorInverted, 'container_about': true}">
     <div style="display: flex; align-items: center; justify-content: space-between;">
-      <h2>About</h2>
+      <!--
       <div>
         <nuxt-link to="/#about" class="locale_link">日本語</nuxt-link>
         <span>/</span>
         <nuxt-link to="/en#about" class="locale_link">English</nuxt-link>
       </div>
+      -->
     </div>
 
     <h4>Hidetoshi Watanabe</h4>
@@ -72,7 +73,7 @@
 
     <h4 style="margin-bottom: 5px;">Links</h4>
     <div class="links_wrapper">
-      <a href="https://github.com/nabehide" target="_blank" rel="noopener" class="icon">
+      <a href="https://github.com/nabehide" target="_blank" rel="noopener" class="icon" style="margin: 10px;">
         <font-awesome-icon :icon="['fab', 'github']" style="background-color: #333; color: #eee;" />
       </a>
       <a href="https://twitter.com/____nabehide" target="_blank" rel="noopener" class="icon">
@@ -85,7 +86,26 @@
         <font-awesome-icon :icon="['fab', 'soundcloud']" style="background: linear-gradient(#ff8800, #ff3300); color: #eee; width: 16px;" />
       </a>
       <a href="https://www.shadertoy.com/user/nabehide" target="_blank" rel="noopener" class="icon" >
-        <img src="/shadertoy.jpg" width="24px" height="24px" style="border-radius: 10px;" />
+        <img src="/shadertoy.jpg" width="26px" height="26px" style="border-radius: 10px;" />
+      </a>
+      <a href="https://atcoder.jp/users/nabehide" target="_blank" rel="noopener" class="icon">
+        <img src="/Atcoder_logo.png" width="20px" height="20px" style="padding: 3px; background-color: white;" />
+      </a>
+    </div>
+
+    <div class="badges">
+      <a href="https://itunes.apple.com/us/developer/hidetoshi-watanabe/id1442101437#see-all/i-phonei-pad-apps" class="store_badge_apple">
+        <img
+          alt="Apple Store からダウンロード"
+          src="/app_store.svg"
+        />
+      </a>
+      <a href='https://play.google.com/store/apps/developer?id=nabehide' class="store_badge_google">
+        <img
+          width=150
+          alt='Google Play で手に入れよう'
+          src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
+        />
       </a>
     </div>
 
@@ -158,7 +178,6 @@ export default {
   padding: 5px 10px;
 
   border: 1px solid;
-  border-color: #111;
   span {
     font-size: 14px;
   }
@@ -170,7 +189,13 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin: 0px 10px;
+}
+@media screen and (min-width: 600px) {
+  .links_wrapper {
+    justify-content: flex-start;
+  }
 }
 .icon {
   margin: 4px;
@@ -179,4 +204,30 @@ export default {
   padding: 5px;
   border-radius: 5px;
 }
+
+.badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 600px) {
+  .badges {
+    justify-content: flex-start;
+  }
+}
+/*
+.store_badge_google {
+  position: relative;
+  width: 150px;
+  height: 60px;
+}
+.store_badge_apple {
+  position: relative;
+  width: 140px;
+  height: 40px;
+  margin-left: 5px;
+}
+*/
 </style>

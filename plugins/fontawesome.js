@@ -10,6 +10,7 @@ import {
 
 import {
   faApple,
+  faAppStore,
   faGithub,
   faGooglePlay,
   faSoundcloud,
@@ -24,6 +25,7 @@ library.add(
   faGlobe,
 
   faApple,
+  faAppStore,
   faGithub,
   faGooglePlay,
   faSoundcloud,

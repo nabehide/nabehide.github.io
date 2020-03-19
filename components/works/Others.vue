@@ -44,7 +44,7 @@ export default {
       {
         name: "Google Play Store",
         awesome: ["fab", "google-play"],
-        url: "https://play.google.com/store/apps/collection/cluster?clp=igMxChkKEzUzMTcyOTYxMjAyNDE0OTg5MzkQCBgDEhIKDGNvbS5hZGVyYXNlchABGAMYAQ%3D%3D:S:ANO1ljIo3w8&gsr=CjSKAzEKGQoTNTMxNzI5NjEyMDI0MTQ5ODkzORAIGAMSEgoMY29tLmFkZXJhc2VyEAEYAxgB:S:ANO1ljK2fLU",
+        url: "https://play.google.com/store/apps/developer?id=nabehide",
       },
     ]},
   },

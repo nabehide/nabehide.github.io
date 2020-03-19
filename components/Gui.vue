@@ -19,6 +19,21 @@ export default {
     const guiContainer = document.getElementById("guiContainer");
     guiContainer.appendChild(this.gui.domElement);
 
+    /*
+    const localeFolder = this.gui.addFolder("language");
+    localeFolder.open();
+    const moveToJa = {
+      日本語: () => {
+        location.href = "/";
+      },
+      English: () => {
+        location.href = "/en";
+      },
+    }
+    localeFolder.add(moveToJa, '日本語')
+    localeFolder.add(moveToJa, 'English')
+    */
+
     if ( flagAudio ) {
       const folder = this.gui.addFolder("audio");
       folder.open();
@@ -31,6 +46,7 @@ export default {
       });
     }
 
+    /*
     const folder = this.gui.addFolder("scene");
     folder.open();
     const generalState = this.$store.getters["general/state"];
@@ -40,6 +56,7 @@ export default {
       this.$store.commit("general/set", {name: "scene", value: scene});
       document.getElementById("buttonChangeScene").click();
     });
+    */
 
     const uniformsState = this.$store.getters["uniforms/state"];
     const uniforms = JSON.parse(JSON.stringify(uniformsState));

@@ -8,8 +8,10 @@
 
 <style scoped lang="scss">
 div {
+  /*
   padding-right: 20px;
   text-align: right;
+  */
   span {
     display: inline-block;
     a {
