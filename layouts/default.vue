@@ -1,19 +1,31 @@
 <template>
   <div>
+    <!--
     <Navigation/>
+    <div style="margin-top: 10px;">
+      <Locale/>
+    </div>
+    -->
+
     <canvas id="canvas" />
     <button id="button" style="display: none;">button</button>
     <button id="buttonChangeScene" style="display: none;" @click=handleChangeScene></button>
-    <nuxt/>
+
+    <transition name="page">
+      <nuxt/>
+    </transition>
+
   </div>
 </template>
 
 <script>
-import Navigation from '~/components/Navigation';
+// import Navigation from '~/components/Navigation';
+// import Locale from '~/components/Locale';
 import Three from '~/assets/js/Three'
 export default {
   components: {
-    Navigation,
+    // Navigation,
+    // Locale,
   },
   mounted () {
     this.three = new Three(this.$store)

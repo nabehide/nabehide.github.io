@@ -26,3 +26,10 @@ a:active {
 .isColorInverted a:active {
   color: #eee;
 }
+
+.page-enter-active, .page-leave-active {
+  transition: opacity 1s;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+}
