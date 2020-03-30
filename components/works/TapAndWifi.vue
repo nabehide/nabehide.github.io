@@ -8,7 +8,7 @@
     "en": {
       "title": "Charge and Wi-Fi Japan",
       "description1": "The app shows charge / Wi-Fi spots in Japan.",
-      "description2": "The data is scraped from each official website."
+      "description2": "The database is updated automatically by web scraping."
     }
   }
 </i18n>

@@ -6,9 +6,9 @@
       "description2": "お店のデータベースはWebスクレイピングで自動化しています。"
     },
     "en": {
-      "title": "Boba map",
-      "description1": "A map app to finds boba drink in japan.",
-      "description2": "The database is updated automatically with web scraping."
+      "title": "Boba tea maps",
+      "description1": "A map app to find boba tea shops in Japan.",
+      "description2": "The database is updated automatically by web scraping."
     }
   }
 </i18n>
