@@ -8,8 +8,8 @@
     "dev": "HOST=0.0.0.0 PORT=3000 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "generate:audio": "NODE_ENV=audio nuxt generate; rm dist/mece.m4a",
+    "generate": "nuxt generate; rm dist/mece.m4a",
+    "generate:audio": "NODE_ENV=audio nuxt generate",
     "deploy:audio": "git subtree push --prefix audio/ audio master",
     "hosting": "firebase deploy"
   },
