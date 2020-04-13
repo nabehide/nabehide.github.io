@@ -3,14 +3,18 @@ const pkg = require('./package')
 const moduleCommon = [
   'nuxt-i18n', {
     locales: [
-      "ja",
-      "en",
+      { code: 'en', iso: 'en-US' },
+      { code: 'ja', iso: 'ja-JP' },
     ],
     defaultLocale: 'ja',
     vueI18n: {
       fallbackLocale: 'en',
     },
     vueI18nLoader: true,
+    seo: true,
+    detectBrowserLanguage: {
+      useCookie: false,
+    },
   },
 ]
 const moduleBase = process.env.NODE_ENV === 'production' ? {
@@ -42,9 +46,6 @@ module.exports = {
   */
   head: {
     title: 'nabehide\'s portfolio',
-    htmlAttrs: {
-      lang: 'ja',
-    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
