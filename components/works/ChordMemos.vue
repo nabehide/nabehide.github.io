@@ -44,7 +44,6 @@ export default {
       "React Native",
       "i18n",
       "Nuxt.js",
-      "Firebase hosting",
     ]},
     links() { return [
       {

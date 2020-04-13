@@ -43,7 +43,6 @@ export default {
       "Three.js",
       "GLSL",
       "Web Audio API",
-      "i18n",
     ]},
     links() { return [
       {

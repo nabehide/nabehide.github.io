@@ -48,7 +48,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'This site is created by myself using WebGL(Three.js), Nuxt.js and GLSL.' },
+      { hid: 'description', name: 'description', content: 'This website is created with WebGL(Three.js), Nuxt.js and GLSL.' },
       { property: 'og:title', content: 'nabehide portfolio' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://nabehide.com' },
