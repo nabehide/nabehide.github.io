@@ -51,7 +51,7 @@ export default {
         url: "/",
       },
       {
-        name: "Web" + this.$t.bind(this)("site") + " with audio effect",
+        name: "with audio effect",
         awesome: ["fas", "external-link-alt"],
         url: "https://nabehide.github.io/portfolio_with_audio_effect",
       },

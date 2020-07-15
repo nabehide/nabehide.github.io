@@ -8,7 +8,7 @@
       "LP": "ランディングページ"
     },
     "en": {
-      "title": "Chord Memos",
+      "title": "Chord memos",
       "description1": "A memo app for chord progression.",
       "description2": " ",
       "country": "us/app",

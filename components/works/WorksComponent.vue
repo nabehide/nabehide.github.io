@@ -2,7 +2,7 @@
   <section :class="{'isColorInverted': isColorInverted}">
     <div>
       <h3>
-        <img :src=icon width="32" height="32" alt="icon" />
+        <img :src=icon width="64" height="64" alt="icon" />
         <span>{{ title }}</span>
       </h3>
       <div class="descriptions">
@@ -18,7 +18,7 @@
     </div>
 
     <div class="buttons">
-      <div v-for="link in links">
+      <div v-for="link in links" class="containerButton">
         <a :href=link.url target="_blank" rel="noopener" class="button" >
           <font-awesome-icon :icon="[link.awesome[0], link.awesome[1]]" class="button_icon" />
           <span class="button_text">{{ link.name }}</span>
@@ -92,22 +92,30 @@ section {
 }
 .descriptions {
   padding: 0px 10px;
+  margin: 0px 16px;
 }
 h3 {
   padding: 10px;
-  margin: 10px 0px;
+  margin: 20px 16px;
   display: flex;
   align-items: center;
 }
 h3 img {
   vertical-align: middle;
-  border-radius: 5px;
-  margin-right: 10px;
+  border-radius: 10px;
+  margin-right: 20px;
 }
 .buttons {
   display: flex;
   flex-direction: column;
-  margin: 10px 10px;
+  align-items: center;
+  padding: 0px 10px;
+  margin: 16px;
+}
+.containerButton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -122,11 +130,13 @@ a {
   text-align: center;
 }
 .button {
-  margin: 5px;
+  margin: 8px;
   padding: 10px 15px;
   background-color: #111;
   border-radius: 20px;
   display: flex;
+  width: 100%;
+  max-width: 300px;
   /*
   justify-content: space-around;
   */
@@ -145,14 +155,22 @@ a {
 .button,
 .button::before,
 .button::after {
-  -webkit-transition: background-color .3s;
   transition: background-color .3s;
 }
+.button * {
+  transition: color .3s;
+}
 .button:hover {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.2);
+  * {
+    color: #111;
+  }
 }
 .isColorInverted .button:hover {
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.2);
+  * {
+    color: #eee;
+  }
 }
 /*
 table {
@@ -162,8 +180,8 @@ table {
 }
 */
 .tag {
-  margin: 5px 5px;
-  padding: 5px 10px;
+  margin: 4px 6px;
+  padding: 6px 12px;
 
   /* square border
   border: 1px solid;

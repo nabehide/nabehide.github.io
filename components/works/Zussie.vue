@@ -41,7 +41,7 @@ export default {
     tags() { return [
       "Unity",
       "Unity IAP",
-      "Firebase Cloud Firestore",
+      "Cloud Firestore",
     ]},
     links() { return [
       {
