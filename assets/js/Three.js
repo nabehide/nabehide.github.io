@@ -160,20 +160,25 @@ export default class Three {
       }
     }
   }
-  initOthers () {
-    window.onresize = () => {
-      this.width = window.innerWidth;
-      this.height = window.innerHeight;
-      this.aspect = this.width / this.height;
-
-      this.renderer.setSize(this.width, this.height);
-      this.camera.aspect = this.aspect;
-
-      // this.uniforms.resolution.value = new THREE.Vector2(this.width, this.height);
+  initOthers = () => {
+    if (navigator.userAgent.indexOf("iPhone") !== -1 || navigator.userAgent.indexOf("iPad") !== -1 || navigator.userAgent.indexOf("Android") !== 0) {
+      window.addEventListener("orientationchange", this.handleResize);
+    } else {
+      window.addEventListener("resize", this.handleResize);
     }
 
     this.fps = 1000.0 / 30.;
     this.past = new Date().getTime();
+  }
+  handleResize = () => {
+    this.width = window.innerWidth;
+    this.height = window.innerHeight;
+    this.aspect = this.width / this.height;
+
+    this.renderer.setSize(this.width, this.height);
+    this.camera.aspect = this.aspect;
+
+    // this.uniforms.resolution.value = new THREE.Vector2(this.width, this.height);
   }
   initShader () {
     if (this.plane) {

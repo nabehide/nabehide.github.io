@@ -43,8 +43,7 @@ export default {
 #canvas {
   position: fixed;
   z-index: -100;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50.0%, -50.1%);
+  width: 100%;
+  height: 100%;
 }
 </style>
