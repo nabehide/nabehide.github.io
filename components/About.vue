@@ -4,14 +4,14 @@
       "born": "千葉県生まれ。",
       "master": "千葉大学大学院工学研究科修士課程修了。",
       "study": "最適化手法の工学的応用の研究に従事。(C++)",
-      "job1": "デスクトップアプリケーションの開発。(Python, Qt)",
+      "job1": "データ解析や可視化のためのデスクトップアプリケーションの開発。(Python, Qt)",
       "job2": "iOS/Androidアプリケーションの開発。(React Native, Expo, Unity)"
     },
     "en": {
       "born": "Born in Chiba, Japan.",
       "master": "Got master's degree in electrical engineering from Chiba University.",
       "study": "Engaged in research on optimization methods for engineering applications with C++.",
-      "job1": "Developed desktop applications with Python, Qt.",
+      "job1": "Developed desktop applications for data analytics and visualization with Python and Qt.",
       "job2": "Developed iOS/Android application with React Native (Expo) or Unity."
     }
   }
