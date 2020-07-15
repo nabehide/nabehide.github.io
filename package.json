@@ -27,7 +27,7 @@
     "nuxt": "^2.7.1",
     "nuxt-i18n": "^6.8.1",
     "raw-loader": "^1.0.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^9.0.2",
     "three": "^0.100.0"
   },
   "devDependencies": {
