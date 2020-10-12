@@ -19,7 +19,6 @@ const moduleCommon = [
 ]
 const moduleBase = process.env.NODE_ENV === 'production' ? {
   modules: [
-    ['@nuxtjs/google-analytics', { id: 'UA-125972611-2' }],
     moduleCommon,
   ]
 } : {
@@ -89,6 +88,13 @@ module.exports = {
   ** Nuxt.js modules
   */
   ...moduleBase,
+
+  buildModules: [
+    ['@nuxtjs/google-analytics', { id: 'UA-125972611-2' }],
+  ],
+  debug: {
+    enabled: true,
+  },
 
   /*
   ** Build configuration
