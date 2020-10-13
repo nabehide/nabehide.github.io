@@ -1,5 +1,8 @@
 const pkg = require('./package')
 
+require('dotenv').config();
+const { GOOGLE_TAG_MANAGER_ID } = process.env;
+
 const moduleCommon = [
   'nuxt-i18n', {
     locales: [
@@ -16,6 +19,7 @@ const moduleCommon = [
       useCookie: false,
     },
   },
+  '@nuxtjs/gtm',
 ]
 const moduleBase = process.env.NODE_ENV === 'production' ? {
   modules: [
@@ -94,6 +98,14 @@ module.exports = {
   ],
   debug: {
     enabled: true,
+  },
+  gtm: {
+    id: GOOGLE_TAG_MANAGER_ID,
+  },
+  publicRuntimeConfig: {
+    gtm: {
+      id: GOOGLE_TAG_MANAGER_ID,
+    },
   },
 
   /*

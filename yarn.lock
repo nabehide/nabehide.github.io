@@ -1308,12 +1308,28 @@
     webpack-node-externals "^1.7.2"
     webpackbar "^4.0.0"
 
+"@nuxtjs/dotenv@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/dotenv/-/dotenv-1.4.1.tgz#dd5abb98e22cc7ae27139d3aa606151034293128"
+  integrity sha512-DpdObsvRwC8d89I9mzz6pBg6e/PEXHazDM57DOI1mmML2ZjHfQ/DvkjlSzUL7T+TnW3b/a4Ks5wQx08DqFBmeQ==
+  dependencies:
+    consola "^2.10.1"
+    dotenv "^8.1.0"
+
 "@nuxtjs/google-analytics@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/google-analytics/-/google-analytics-2.3.0.tgz#d4c900e4bc5b91b23da33e5764d6a9a6236d78fd"
   integrity sha512-TBRWCZJJBywNU4Sxbe03w5uy76O9JiOJz5ZgFDAmU06IUhwMELWOoQFWTqgROmvhqzoZrXMPR5JiaEnvaCRuDA==
   dependencies:
     vue-analytics "^5.22.1"
+
+"@nuxtjs/gtm@^2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/gtm/-/gtm-2.3.2.tgz#7b1b9a37f8250c475007cfde1294b7b8bc43d025"
+  integrity sha512-DC4m8mqKv8WkmFZJ/qEnpDXhJgbMQfTyny1p2GGbV+QzEtm61tAsNIjx9tO15KYH99EG3LqJN68RxsEMtn2ZVQ==
+  dependencies:
+    chalk "^4.1.0"
+    semver "^7.3.2"
 
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
@@ -3385,7 +3401,7 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
-dotenv@^8.2.0:
+dotenv@^8.1.0, dotenv@^8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==

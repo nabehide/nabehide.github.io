@@ -2,9 +2,9 @@
   <div id="worksContainer">
 
     <ChordMemos :isColorInverted="isColorInverted" />
-    <Tapioca :isColorInverted="isColorInverted"/>
     <Zussie :isColorInverted="isColorInverted" />
     <TapAndWifi :isColorInverted="isColorInverted"/>
+    <Tapioca :isColorInverted="isColorInverted"/>
     <ThreejsNative :isColorInverted="isColorInverted"/>
     <Portfolio :isColorInverted="isColorInverted"/>
     <Others :isColorInverted="isColorInverted"/>
