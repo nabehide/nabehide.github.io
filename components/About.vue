@@ -1,18 +1,20 @@
 <i18n>
   {
     "ja": {
-      "born": "千葉県生まれ。",
-      "master": "千葉大学大学院工学研究科修士課程修了。",
-      "study": "最適化手法の工学的応用の研究に従事。(C++)",
-      "job1": "データ解析や可視化のためのデスクトップアプリケーションの開発。(Python, Qt)",
-      "job2": "iOS/Androidアプリケーションの開発。(React Native, Expo, Unity)"
+      "born": "千葉県生まれ",
+      "master": "千葉大学大学院工学研究科修士課程修了",
+      "study": "最適化手法の工学的応用の研究に従事 (C++)",
+      "job1": "データ解析や可視化のためのデスクトップアプリケーションの開発(Python, Qt)",
+      "job2": "iOS/Androidアプリケーションの開発 (Flutter, Unity, Expo, React Native)",
+      "job3": "Webアプリケーションの開発 (React, Ruby on Rails)"
     },
     "en": {
       "born": "Born in Chiba, Japan.",
       "master": "Got master's degree in electrical engineering from Chiba University.",
       "study": "Engaged in research on optimization methods for engineering applications with C++.",
       "job1": "Developed desktop applications for data analytics and visualization with Python and Qt.",
-      "job2": "Developed iOS/Android application with React Native (Expo) or Unity."
+      "job2": "Developed iOS/Android application with React Native (Expo) or Unity.",
+      "job3": "Developing web application with React and Ruby on Rails."
     }
   }
 </i18n>
@@ -62,6 +64,13 @@
         <span>2018</span><span>-</span>
       </div>
       <span>{{ this.$t.bind(this)("job2") }}</span>
+    </div>
+
+    <div class="description_wrapper">
+      <div class="year">
+        <span>2020</span><span>-</span>
+      </div>
+      <span>{{ this.$t.bind(this)("job3") }}</span>
     </div>
 
     <h4 style="margin-bottom: 5px;">Skills</h4>
@@ -119,11 +128,13 @@ export default {
   },
   computed: {
     tags() { return [
-      "React Native",
       "Expo",
+      "Flutter",
       "Nuxt.js",
       "Python",
-      "C++",
+      "React",
+      "React Native",
+      "Ruby on Rails",
       "Unity",
     ]},
   },

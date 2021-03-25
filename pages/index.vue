@@ -93,7 +93,7 @@
         <h2>About</h2>
         <Locale/>
       </div>
-      <div style="margin: 20px;">
+      <div style="padding: 20px;">
         <About :isColorInverted=isColorInverted />
       </div>
 
