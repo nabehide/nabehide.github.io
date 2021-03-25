@@ -9,8 +9,8 @@
     <div id="worksContainer">
 
       <Zussie :isColorInverted="isColorInverted" />
+      <Speedic :isColorInverted="isColorInverted" />
       <ChordMemos :isColorInverted="isColorInverted" />
-      <Tapioca :isColorInverted="isColorInverted"/>
       <TapAndWifi :isColorInverted="isColorInverted"/>
       <ThreejsNative :isColorInverted="isColorInverted"/>
       <Portfolio :isColorInverted="isColorInverted"/>
@@ -26,8 +26,8 @@
 import ChordMemos from '~/components/works/ChordMemos'
 import Others from '~/components/works/Others'
 import Portfolio from '~/components/works/Portfolio'
+import Speedic from '~/components/works/Speedic'
 import TapAndWifi from '~/components/works/TapAndWifi'
-import Tapioca from '~/components/works/Tapioca'
 import ThreejsNative from '~/components/works/ThreejsNative'
 import Zussie from '~/components/works/Zussie'
 export default {
@@ -38,7 +38,6 @@ export default {
     Others,
     Portfolio,
     TapAndWifi,
-    Tapioca,
     ThreejsNative,
     Zussie,
   },

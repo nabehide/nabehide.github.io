@@ -1,10 +1,10 @@
 <template>
   <div id="worksContainer">
 
-    <ChordMemos :isColorInverted="isColorInverted" />
     <Zussie :isColorInverted="isColorInverted" />
+    <Speedic :isColorInverted="isColorInverted" />
+    <ChordMemos :isColorInverted="isColorInverted" />
     <TapAndWifi :isColorInverted="isColorInverted"/>
-    <Tapioca :isColorInverted="isColorInverted"/>
     <ThreejsNative :isColorInverted="isColorInverted"/>
     <Portfolio :isColorInverted="isColorInverted"/>
     <Others :isColorInverted="isColorInverted"/>
@@ -18,8 +18,8 @@ import Locale from '~/components/Locale'
 import ChordMemos from '~/components/works/ChordMemos'
 import Others from '~/components/works/Others'
 import Portfolio from '~/components/works/Portfolio'
+import Speedic from '~/components/works/Speedic'
 import TapAndWifi from '~/components/works/TapAndWifi'
-import Tapioca from '~/components/works/Tapioca'
 import ThreejsNative from '~/components/works/ThreejsNative'
 import Zussie from '~/components/works/Zussie'
 export default {
@@ -32,8 +32,8 @@ export default {
     ChordMemos,
     Others,
     Portfolio,
+    // Speedic,
     TapAndWifi,
-    Tapioca,
     ThreejsNative,
     Zussie,
   },
